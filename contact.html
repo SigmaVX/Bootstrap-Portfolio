@@ -6,54 +6,95 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Tony Wible</title>
 
+        <!-- Bootsrap CDN Links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         <!-- CSS and JS Files -->
         <link rel="stylesheet" href="./assets/css/style.css">
+    
     </head>
 
     <body>
+    
     <!--Header Section-->
-        <header>     
-            <h1>Tony Wible</h1>
-            <nav>
-                <a href="index.html">About</a> |
-                <a href="portfolio.html">Portfolio</a> |
-                <a href="contact.html">Contact</a>
-            </nav>     
-        </header>
-        
-        <!--Main Section-->
-        <div class="mainbody">
-            <div class="well">
-                <div class="bigbox">
+    <header> 
+        <div class="container.fluid">
+            <div class="row no-gutters">
+                <div class="col-md-9 col-xs-12">
+                    <h1>Tony Wible</h1>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center">
+                    <nav>
+                        <a href="index.html">About</a> |
+                        <a href="portfolio.html">Portfolio</a> |
+                        <a href="contact.html">Contact</a>
+                    </nav>     
+                </div>
+            </div>  
+        </div>
+    </header>
+
+    <!--Main Section-->
+        <div class="container-fluid mainbody">
+            <div class="row justify-content-around">
+                <!-- Big Box -->
+                <div class="col-md-7 col-xs-12 bigbox">
                     <h2>Contact</h2>
-                    <form action="#">
-                        <strong>Name</strong><br>
-                            <input type="text" name="Name" value="John Smith"><br>
-                        <strong>Email</strong><br>
-                            <input type="text" name="Email" value="example@gmail.com"><br>
-                        <strong>Message</strong><br>
-                            <input id="messagebox" type="text" name="Message"><br>
-                            <input class="button" type="submit" value="Submit">
+                    <form action="#">    
+                        <div class="form-group">
+                            <lable for="name"><strong>Name</strong></lable><br>
+                            <input class="form-control" type="text" name="Name" value="John Smith">
+                        </div>
+                        
+                        <div class="form-group">
+                            <strong>Email</strong><br>
+                            <input class="form-control" type="text" name="Email" value="example@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <strong>Message</strong><br>
+                            <input class="form-control" id="messagebox" type="text" name="Message">
+                        </div>
+                        
+                        <div>    
+                            <input class="button btn btn-block" type="submit" value="Submit">
+                        </div>
+                
                     </form>
                 </div>
-                <div class="linkbox">
-                        <h3>Connect With Me</h3>
+
+                <!-- Small Box -->
+                <div class="col-md-3 col-xs-12 linkbox">
+                    <h3>Connect With Me</h3>
+                    <div class="row text-center">
+                        <div class="col-sm-12">
                         <a href="https://github.com/SigmaVX" target="_blank">
-                            <img src="./assets/images/github-50.png" alt="GitHub">
+                            <img class="img-responsive" src="./assets/images/github-50.png" alt="GitHub">
                         </a>
                         <a href="https://www.linkedin.com/in/tonywible/" target="_blank">
-                            <img src="./assets/images/linkedin-50.png" alt="LinkedIn">
+                            <img class="img-responsive" src="./assets/images/linkedin-50.png" alt="LinkedIn">
                         </a>
                         <a href="https://stackoverflow.com/users/9150836/sigma-vx?tab=profile" target="_blank">
-                            <img src="./assets/images/stack-overflow-50.png" alt="Stack Overflow">
+                            <img class="img-responsive" src="./assets/images/stack-overflow-50.png" alt="Stack Overflow">
                         </a>
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
 
-        <!--Footer Section-->
-        <footer>
-            <p>© Copywrite 2018 Tony Wible</p>
-        </footer>
+    <!--Footer Section-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>© Copyright 2018 Tony Wible</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
