@@ -40,10 +40,11 @@ br {
 
 nav {
     padding-top: 30px;
+    color: black;
 }
 
-nav a {
-    color: grey;
+a {
+    color: black;
     text-decoration: none;
 }
 
@@ -61,10 +62,6 @@ header h1 {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-header nav {
-    color: grey;
 }
 
 footer {
@@ -126,15 +123,11 @@ footer p {
 
 .port-img {
     margin-bottom: 15px;
-    margin-right: 5%;
+    margin: 10px auto;
 }
 
-/* .portfolio {
-    margin-left: -10px;
-} */
-
 .portfolio p {
-    width: 250px;
+    /* max-width: 100%; */
     padding-top: 8px;
     padding-bottom: 5px;   
     font-size: 16px;
@@ -148,6 +141,11 @@ footer p {
     top: 125px;
     left: 0px;
     z-index: 1;
+    width: 100%;
+}
+
+.gold {
+    background-color: gold;
 }
 
 #about-img {
@@ -181,7 +179,11 @@ nav {
 }
 
 .port-img {
-    margin-left: 5px;
+    margin: 5px auto;
+}
+
+.port-img img {
+    width: 100%;
 }
 
 }
