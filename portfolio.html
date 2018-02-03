@@ -6,80 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tony Wible</title>
 
+    <!-- Bootsrap CDN Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <!-- CSS and JS Files -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body>
 
-   <!--Header Section-->
-    <header>     
-        <h1>Tony Wible</h1>
-        <nav>
-            <a href="index.html">About</a> |
-            <a href="portfolio.html">Portfolio</a> |
-            <a href="contact.html">Contact</a>
-        </nav>     
+<!--Header Section-->
+    <header> 
+        <div class="container.fluid">
+            <div class="row no-gutters">
+                <div class="col-md-9 col-xs-12">
+                    <h1>Tony Wible</h1>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center">
+                    <nav>
+                        <a href="index.html">About</a> |
+                        <a href="portfolio.html">Portfolio</a> |
+                        <a href="contact.html">Contact</a>
+                    </nav>     
+                </div>
+            </div>  
+        </div>
     </header>
     
     <!--Main Section-->
-    <div class="mainbody">
-        <div class="well">
-            <div class="bigbox">
+    <div class="container-fluid mainbody">
+        <div class="row justify-content-around">
+            
+            
+            <!-- Big Box -->
+            <div class="col-md-7 col-xs-12 bigbox">
                 <h2>Portfolio</h2>
-                <div class="portfolio">
-                    <div class="port-img">
-                        <img src="./assets/images/food.jpg" alt="Food Image"> 
+                
+                <div class="container-fluid">
+
+                <div class="row no-gutters justify-content-between portfolio">
+                    <div class="col-xs-12 col-md-5 port-img">
+                        <img class="img-responsive" src="./assets/images/food.jpg" alt="Food Image"> 
                         <div class="image-wrap">
                            <p><strong>Food</strong></p>
                         </div>
                     </div>   
-                    <div class="port-img">
-                        <img src="./assets/images/animal.jpg" alt="Animal Image">
+                    <div class="col-xs-12 col-md-5 port-img">
+                        <img class="img-responsive" src="./assets/images/animal.jpg" alt="Animal Image">
                         <div class="image-wrap">
                             <p><strong>Animals</strong></p>
                         </div>
-                    </div>   
-                    <div class="port-img">
-                        <img src="./assets/images/city.jpg" alt="City Image">
+                    </div>
+                </div>
+
+                <div class="row no-gutters justify-content-between portfolio"> 
+                    <div class="col-xs-12 col-md-5 port-img">
+                        <img class="img-responsive" src="./assets/images/city.jpg" alt="City Image">
                         <div class="image-wrap">
                             <p><strong>Cities</strong></p>
                         </div>
                     </div>   
-                    <div class="port-img">
-                        <img src="./assets/images/stuff.jpg" alt="Stuff Image">
+                    <div class="col-xs-12 col-md-5 port-img">
+                        <img class="img-responsive" src="./assets/images/stuff.jpg" alt="Stuff Image">
                         <div class="image-wrap">
                             <p><strong>Mixed Bag</strong></p>
                         </div>
                     </div>
-                    <div class="port-img">
-                        <img src="./assets/images/nature.jpg" alt="Nature Image">
+                </div>    
+
+                <div class="row no-gutters justify-content-between portfolio">    
+                    <div class="col-xs-12 col-md-5 port-img">
+                        <img class="img-responsive" src="./assets/images/nature.jpg" alt="Nature Image">
                         <div class="image-wrap">
                             <p><strong>Nature</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="linkbox">
-                <h3>Connect With Me</h3>
-                <a href="https://github.com/SigmaVX" target="_blank">
-                    <img src="./assets/images/github-50.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/tonywible/" target="_blank">
-                    <img src="./assets/images/linkedin-50.png" alt="LinkedIn">
-                </a>
-                <a href="https://stackoverflow.com/users/9150836/sigma-vx?tab=profile" target="_blank">
-                    <img src="./assets/images/stack-overflow-50.png" alt="Stack Overflow">
-                </a>
             </div>
-            
+            <!-- Small Box -->
+            <div class="col-md-3 col-xs-12 linkbox">
+                <h3>Connect With Me</h3>
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                    <a href="https://github.com/SigmaVX" target="_blank">
+                        <img class="img-responsive" src="./assets/images/github-50.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/tonywible/" target="_blank">
+                        <img class="img-responsive" src="./assets/images/linkedin-50.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://stackoverflow.com/users/9150836/sigma-vx?tab=profile" target="_blank">
+                        <img class="img-responsive" src="./assets/images/stack-overflow-50.png" alt="Stack Overflow">
+                    </a>
+                    </div>
+                </div>
+            </div>  
         </div>
     </div>
 
-        <!--Footer Section-->
-        <footer>
-            <p>© Copywrite 2018 Tony Wible</p>
-        </footer>
+    <!--Footer Section-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>© Copyright 2018 Tony Wible</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
